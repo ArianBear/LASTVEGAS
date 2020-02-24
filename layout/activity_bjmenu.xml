@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BJMenu">
+
+    <Button
+        android:id="@+id/top"
+        android:layout_width="212dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
+        android:layout_marginBottom="313dp"
+        android:text="High Stakes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mid"
+        app:layout_constraintStart_toStartOf="@+id/low"
+        app:layout_constraintTop_toBottomOf="@+id/low"
+        android:onClick="onTop"
+        />
+
+    <Button
+        android:id="@+id/mid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:text="Medium Stakes"
+        app:layout_constraintBottom_toTopOf="@+id/top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/low"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onMid"
+        />
+
+    <Button
+        android:id="@+id/low"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="206dp"
+        android:text="Low Stakes"
+        app:layout_constraintBottom_toTopOf="@+id/top"
+        app:layout_constraintEnd_toStartOf="@+id/mid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onLow"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
